@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto Mono", monospace !important;
+  font-family: "Roboto", sans-serif !important;
   font-optical-sizing: auto !important;
   font-weight: 400;
   font-style: normal;
@@ -202,4 +202,94 @@ p {
 }
 .icon-small-container-banner > i {
   color: #ffffff;
+}
+
+.services {
+  background: url("/assets/image/service-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 140px 0 !important;
+}
+
+.service-img-container > div.card > .card-img-overlay {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(0, 10, 73, 0.8015581232492998) 80%
+  );
+}
+
+.icon-small-container-service {
+  display: flex;
+  align-self: center;
+  min-width: 60px;
+  max-width: 70px !important;
+  height: 60px;
+  background-color: rgba(0, 125, 251, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+.icon-small-container-service > i {
+  color: #007dfb;
+  transition: all 0.2s ease-in-out;
+}
+
+.service-card > .card-body > h4 {
+  color: #000;
+}
+
+.service-card .card-body > p {
+  color: #007cfb;
+  transition: all 0.2s ease-in-out;
+}
+.service-card:hover {
+  cursor: pointer;
+  background: rgb(125, 187, 244);
+  background: linear-gradient(
+    90deg,
+    rgba(125, 187, 244, 0.896796218487395) 5%,
+    rgba(0, 125, 251, 1) 40%
+  );
+}
+
+.service-card:hover .card-body > p,
+h4,
+& .service-card:hover .icon-small-container-service > i {
+  transition: all 0.2s ease-in-out;
+  color: #ffffff !important;
+}
+
+.service-card:hover .icon-small-container-service {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.service-card:hover .float-service-tab {
+  background-color: #ff9900 !important;
+  transition: all 0.1s ease-in-out;
+}
+
+.service-card.active-1 {
+  background: rgb(125, 187, 244);
+  background: linear-gradient(
+    90deg,
+    rgba(125, 187, 244, 0.896796218487395) 5%,
+    rgba(0, 125, 251, 1) 40%
+  );
+}
+
+div.service-card.active-1 > .card-body > h4,
+p,
+i {
+  color: #ffffff !important;
+}
+
+.service-card.active-1 .float-service-tab {
+  background-color: #ff9900 !important;
+  transition: all 0.1s ease-in-out;
+}
+
+.service-card.active-1 .icon-small-container-service {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease-in-out;
 }
