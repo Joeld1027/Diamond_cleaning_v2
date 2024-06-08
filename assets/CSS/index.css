@@ -147,7 +147,7 @@ p {
   font-weight: 600;
 }
 
-.first-banner-text > h5::before {
+/* .first-banner-text > h5::before {
   content: "";
   width: 53px;
   height: 3px;
@@ -190,4 +190,16 @@ p {
   font-size: 24px;
   font-weight: 600;
   margin-left: 10px;
+} */
+
+.icon-small-container-banner {
+  display: flex;
+  align-self: center;
+  min-width: 60px;
+  max-width: 70px !important;
+  height: 60px;
+  background: #ff9900;
+}
+.icon-small-container-banner > i {
+  color: #ffffff;
 }
