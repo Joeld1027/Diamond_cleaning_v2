@@ -223,6 +223,9 @@ p {
 .card-og {
   border-radius: 4px;
 }
+.card-og > .card-text-og > p {
+  color: #007cfb;
+}
 
 .card-og:hover {
   background: rgb(0, 124, 251);
@@ -231,18 +234,18 @@ p {
     rgba(0, 124, 251, 1) 34%,
     rgba(110, 193, 228, 1) 100%
   );
+  cursor: pointer;
 }
 
 .card-og:hover .icon-service-container {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.card-og:hover .icon-service-container > i {
+.card-og:hover > .icon-service-container > i,
+.card-og:hover > .card-text-og,
+.card-og:hover > .card-text-og > p {
   color: white;
-}
-
-.card-og:hover .card-text-og {
-  color: white;
+  transition: all 0.1s ease-in-out;
 }
 
 .icon-service-container {
@@ -253,4 +256,68 @@ p {
 
 .icon-service-container i {
   color: #248aff;
+}
+
+.active-og {
+  background: rgb(0, 124, 251);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 124, 251, 1) 34%,
+    rgba(110, 193, 228, 1) 100%
+  );
+}
+
+.active-og > .icon-service-container > i {
+  color: white;
+}
+
+.active-og > .icon-service-container {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.active-og > .card-text-og,
+.active-og > .card-text-og > p {
+  color: white;
+}
+
+.gallery-section {
+  background: #258bff;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.gallery-images {
+  position: relative;
+}
+
+.gallery-images-container {
+  position: absolute;
+  top: -110px;
+  right: 0;
+}
+
+.gallery-single-container {
+  width: 350px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.gallery-images-container > img {
+  top: -40px;
+}
+
+.testimonials {
+  margin-top: 320px;
+  background: url("https://demo.casethemes.net/bixol/wp-content/uploads/2022/02/h8-bg-section-07.jpg")
+    no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 140px;
+}
+
+.testimony-card {
+  width: 360px;
+  padding: 20px;
+  background: #ffffff;
 }

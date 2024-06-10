@@ -28,11 +28,11 @@
       <div class="navbar-bg-handler">
         <div class="container">
           <div class="row py-3 d-none d-lg-flex" style="color: white">
-            <div class="col-lg-6">
+            <div class="col-lg-7">
               <p>914 Columbia avenue-South Milwaukee, WI 53172</p>
             </div>
-            <div class="col-lg-4">
-              <ul class="row justify-content-center top-icons">
+            <div class="col-lg-2">
+              <ul class="row justify-content-evenly top-icons">
                 <li class="col-1">
                   <i
                     style="color: #1877f2"
@@ -50,16 +50,22 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-2 text-end">
+            <div class="col-lg-3 text-end">
               <p>123-123-4242</p>
             </div>
           </div>
+          <!-- Navbar -->
           <nav
             class="navbar navbar-expand-lg bg-body-tertiary py-3 shadow sticky-top"
             style="background-color: white"
           >
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#"
+                ><img
+                  src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/11/logo-dark-black.png"
+                  class="img-fluid w-25"
+                  alt=""
+              /></a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -75,7 +81,9 @@
                 class="collapse navbar-collapse justify-content-end"
                 id="navbarNav"
               >
-                <ul class="navbar-nav d-flex align-items-center">
+                <ul
+                  class="navbar-nav d-flex align-items-center justify-content-around"
+                >
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#"
                       >Home</a
@@ -448,8 +456,10 @@
                   providing top quality cleaning and related services that meet.
                 </p>
               </div>
-
-              <div class="service-img-container" id="home-services">
+              <!-- img1 -->
+              <div
+                class="service-img-container mt-2 house-cleaning d-none tabcontent"
+              >
                 <div class="card text-bg-dark border-0">
                   <img
                     src="/assets/image/house_service.jpg"
@@ -471,30 +481,301 @@
                   </div>
                 </div>
               </div>
+              <!-- img2 -->
+              <div
+                class="service-img-container mt-2 d-none tabcontent office-cleaning"
+              >
+                <div class="card text-bg-dark border-0">
+                  <img
+                    src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/08/gallery1-660x410.jpg"
+                    class="card-img img-fluid"
+                    alt="..."
+                  />
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-end"
+                  >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small>Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- img 3 -->
+              <div
+                class="service-img-container mt-2 d-none tabcontent resort-cleaning"
+              >
+                <div class="card text-bg-dark border-0">
+                  <img
+                    src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/08/theme-9-660x410.jpg"
+                    class="card-img img-fluid"
+                    alt="..."
+                  />
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-end"
+                  >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small>Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- img 4 -->
+              <div
+                class="service-img-container mt-2 d-none tabcontent door-cleaning"
+              >
+                <div class="card text-bg-dark border-0">
+                  <img
+                    src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/08/gallery6-660x410.jpg"
+                    class="card-img img-fluid"
+                    alt="..."
+                  />
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-end"
+                  >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small>Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="card-container">
-              <div class="card-og d-flex shadow align-items-center py-4 px-3">
+            <div
+              class="card-container d-flex flex-column justify-content-evenly px-2"
+            >
+              <!-- Card 1 -->
+              <div
+                id="house-cleaning"
+                class="card-og d-flex shadow align-items-center py-4 px-3 active-og mb-3 tablink"
+              >
                 <div
                   class="icon-service-container d-flex justify-content-center align-items-center"
                 >
-                  <i class="fa-solid fa-house fa-2xl px-5"></i>
+                  <i class="fa-solid fa-house-chimney-user fa-2xl px-5"></i>
                 </div>
                 <div class="card-text-og w-75 d-flex flex-column pt-2 px-4">
-                  <h4><strong>Residential Cleaning</strong></h4>
+                  <h4><strong>House Cleaning</strong></h4>
+                  <p><em>Learn More</em></p>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div
+                id="office-cleaning"
+                class="card-og d-flex shadow align-items-center py-4 px-3 mb-3 tablink"
+              >
+                <div
+                  class="icon-service-container d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-regular fa-building fa-2xl px-5"></i>
+                </div>
+                <div class="card-text-og w-75 d-flex flex-column pt-2 px-4">
+                  <h4><strong>Office Cleaning</strong></h4>
+                  <p><em>Learn More</em></p>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div
+                id="resort-cleaning"
+                class="card-og d-flex shadow align-items-center py-4 px-3 mb-3 tablink"
+              >
+                <div
+                  class="icon-service-container d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-hotel fa-2xl px-5"></i>
+                </div>
+                <div class="card-text-og w-75 d-flex flex-column pt-2 px-4">
+                  <h4><strong>Resort Cleaning</strong></h4>
+                  <p><em>Learn More</em></p>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div
+                id="door-cleaning"
+                class="card-og d-flex shadow align-items-center py-4 px-3 mb-0 tablink"
+              >
+                <div
+                  class="icon-service-container d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-door-open fa-2xl px-5"></i>
+                </div>
+                <div class="card-text-og w-75 d-flex flex-column pt-2 px-4">
+                  <h4><strong>Door Cleaning</strong></h4>
                   <p><em>Learn More</em></p>
                 </div>
               </div>
             </div>
-            <button class="btn btn-warning text-white p-2 mt-5">
-              More services
-            </button>
+            <!-- end of card container -->
+            <div
+              class="service-button-container d-flex justify-content-around p-0 align-items-end"
+            >
+              <button class="btn btn-warning text-white h-25 mt-5 py-2">
+                More services
+              </button>
+              <div class="">
+                <img src="/assets/image/tab-arrow.png" alt="" />
+              </div>
+            </div>
           </div>
+          <!-- end of column -->
         </div>
       </div>
     </section>
     <!-- Services end -->
+
+    <!-- Gallery start -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="text-center px-5 text-white">
+          <h4 class="mb-3">Project</h4>
+          <h1 class="mb-4">Our Latest Cleaning Project</h1>
+          <p>
+            All of our suppliers are formally assessed through a rigorous audit
+            process, ensuring the <br />
+            very best quality of service is delivered, aligned to our values.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery end -->
+    <!-- Gallery img start -->
+    <section class="gallery-images">
+      <div class="gallery-images-container d-flex justify-content-around">
+        <div class="gallery-single-container">
+          <img
+            class="img-fluid rounded"
+            src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/10/portfolio-05-676x700.jpg"
+            alt=""
+          />
+        </div>
+        <div class="gallery-single-container">
+          <img
+            class="img-fluid rounded"
+            src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/10/portfolio-04-676x700.jpg"
+            alt=""
+          />
+        </div>
+        <div class="gallery-single-container">
+          <img
+            class="img-fluid rounded"
+            src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/10/portfolio-03-676x700.jpg"
+            alt=""
+          />
+        </div>
+        <div class="gallery-single-container">
+          <img
+            class="img-fluid rounded"
+            src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/10/portfolio-02-676x700.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Gallery img end -->
+    <!-- Testimonial start -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonial-info px-5">
+          <h4>Testimonial</h4>
+          <div class="d-flex">
+            <h1>The Cleaner Came Within The Time Frame</h1>
+            <p>
+              We value the experimentation, the reformation of the message, and
+              the smart incentives. We offer a variety of services and solutions
+              Worldwide.
+            </p>
+          </div>
+        </div>
+        <!-- testimony -->
+        <div
+          class="testimony d-flex align-items-center justify-content-evenly mt-5"
+        >
+          <!-- testimony 1 -->
+          <div class="testimony-card shadow">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+              corrupti tempore blanditiis pariatur repudiandae eius.
+            </p>
+            <div class="d-flex align-items-center">
+              <div class="testimony-img-container pb-3">
+                <img
+                  class="rounded-5"
+                  src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/10/testimonial-03-70x70.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="mx-3">
+                <strong>Laura James</strong><br /><span class="text-muted"
+                  >Floor Cleaner</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- testimony 2 -->
+          <div class="testimony-card shadow">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+              corrupti tempore blanditiis pariatur repudiandae eius.
+            </p>
+            <div class="d-flex align-items-center">
+              <div class="testimony-img-container pb-3">
+                <img
+                  class="rounded-5"
+                  src="https://demo.casethemes.net/bixol/wp-content/uploads/2021/05/h6-testimonial2-70x70.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="mx-3">
+                <strong>Mat & Tina</strong><br /><span class="text-muted"
+                  >Car Cleaner</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- testimony 3 -->
+          <div class="testimony-card shadow">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+              corrupti tempore blanditiis pariatur repudiandae eius.
+            </p>
+            <div class="d-flex align-items-center">
+              <div class="testimony-img-container pb-3">
+                <img
+                  class="rounded-5"
+                  src="https://demo.casethemes.net/bixol/wp-content/uploads/2020/10/testimonial-02-70x70.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="mx-3">
+                <strong>Linda & Bill</strong><br /><span class="text-muted"
+                  >Garden Cleaner</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial end -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
