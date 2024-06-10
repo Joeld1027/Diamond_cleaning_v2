@@ -30,6 +30,25 @@ p {
   background-size: cover;
 }
 
+.hero-image-blue {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  max-width: 500px;
+  width: 480;
+}
+
+@media screen and (max-width: 425px) {
+  .hero-image-blue {
+    max-width: 440px;
+    width: 300px;
+  }
+  .arrow-image-container img {
+    width: 160px;
+  }
+}
+
 .hero-cards {
   z-index: 99;
   width: 100%;
@@ -313,11 +332,77 @@ p {
     no-repeat;
   background-position: center center;
   background-size: cover;
-  margin-bottom: 140px;
+  padding-bottom: 600px;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding-bottom: 1200px;
+  }
 }
 
 .testimony-card {
   width: 360px;
   padding: 20px;
   background: #ffffff;
+}
+
+.contact-form-section {
+  background: url("https://demo.casethemes.net/bixol/wp-content/uploads/2022/02/h8-bg-section-08.jpg")
+    no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-form-section .container {
+  position: relative;
+}
+.contact-form-group {
+  position: absolute;
+  bottom: -120px;
+  left: 10%;
+  right: 10%;
+  background: url("https://demo.casethemes.net/bixol/wp-content/uploads/2022/02/h8-bg-section-08.jpg")
+    no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.icon-contact-container {
+  background: rgb(255, 204, 51);
+  background: linear-gradient(
+    19deg,
+    rgba(255, 204, 51, 1) 10%,
+    rgba(255, 153, 0, 1) 65%
+  );
+  width: 60px;
+  height: 60px;
+}
+
+.icon-contact-container i {
+  color: #f1eded;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-contact-container:hover i {
+  transform: rotateY(360deg);
+}
+.footer-section {
+  background: #000025;
+  padding-top: 300px;
+  min-height: 700px;
+}
+
+.footer-social-container a {
+  text-decoration: none;
+}
+
+.footer-service-links > ul > li > a {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+.footer-service-links > ul > li {
+  list-style: none;
+  margin-bottom: 12px;
 }
